@@ -115,3 +115,13 @@ int[] ikinciDizi = new int[10];
 
 // Yaptığımız sayısal lotoyu bir döngü içerisine alıp sonsuz kere oynatınız
 
+// iki tane dizi olluşturun bu dizilerden birine isimler diğerine soyisimler ekleyiniz.
+
+// sonra her iki diziendee random olarak ad soyad oluşturun 
+
+
+
+
+
+
+
