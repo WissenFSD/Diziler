@@ -183,17 +183,11 @@ int[] ikinciDizi = new int[10];
 
 //}
 //2. Yöntem
-
-for (int i = 0; i < 100; i++)
-{
-    Console.WriteLine("Harf giriniz");
-    int karakter = Convert.ToInt32(Convert.ToChar(Console.ReadLine()));
-
-    int newKarakter = karakter - 32;
-    char buyukHarf = Convert.ToChar(newKarakter);
-
-    Console.WriteLine(buyukHarf);
-
-
-
-}
+//for (int i = 0; i < 100; i++)
+//{
+//    Console.WriteLine("Harf giriniz");
+//    int karakter = Convert.ToInt32(Convert.ToChar(Console.ReadLine()));
+//    int newKarakter = karakter - 32;
+//    char buyukHarf = Convert.ToChar(newKarakter);
+//    Console.WriteLine(buyukHarf);
+//}
