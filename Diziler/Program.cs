@@ -7,22 +7,22 @@
 
 // basit dizi tanımı 
 
-int[] ilkDizi = new int[5];
+//int[] ilkDizi = new int[5];
 
-// eleman atama
-ilkDizi[0] = 10;
-ilkDizi[1] = 11;
-ilkDizi[2] = 12;
+//// eleman atama
+//ilkDizi[0] = 10;
+//ilkDizi[1] = 11;
+//ilkDizi[2] = 12;
 
 
 
-Console.WriteLine("Dizinin eleman sayısı {0}", ilkDizi.Length);
-//int tipinde dizi içerisine string alır mı ?
+//Console.WriteLine("Dizinin eleman sayısı {0}", ilkDizi.Length);
+////int tipinde dizi içerisine string alır mı ?
 
-//ilkDizi[3] = "Deneme";
+////ilkDizi[3] = "Deneme";
 
-// içerisine elemanı convert ederek koyabiliriz.
-ilkDizi[3] = Convert.ToInt32("10");
+//// içerisine elemanı convert ederek koyabiliriz.
+//ilkDizi[3] = Convert.ToInt32("10");
 
 
 
@@ -121,7 +121,79 @@ int[] ikinciDizi = new int[10];
 
 
 
+// isimler dizisi
+//string[] isimler = new string[] { "Ayhan", "Selçuk","Hilmi","Bahadır","Hakan","Mesut" };
+//string[] soyisimler = new string[] { "Ayaz", "Dedekoca", "Kılıçdaroğlu", "Sarıgül", "Tatlıses", "Mesut" };
+
+//Random rnd = new Random();
+//for (int i = 0; i < isimler.Length; i++)
+//{
+//    int random = rnd.Next(0, 6);
+
+//    string isim = isimler[random];
+//    string soyisim = soyisimler[rnd.Next(0, 6)];
+
+//    Console.WriteLine("{0} {1}", isim, soyisim);
+//}
+
+//Console.ReadLine();
+
+
+// int dizisi tanımlayabildiğimize göre char diziside tanımlayabilir
+
+// içerisinde türkçe karakterlerin bulunduğu bir char dizisi tanımlayın
+// sonrasında ekrandan 20 adet char alın
+// ekrandan aldığın charların türkçe karakter mi olup olmadığını ekrana yazdırın
+
+//char[] harfler = new char[] { 'ş', 'ç', 'ü', 'ı', 'ğ' };
+//for (int i = 0; i < 100; i++)
+//{
+
+//    Console.WriteLine("Lütfen bir harf giriniz");
+//    char selectedHarf =Convert.ToChar(Console.ReadLine());
+//    for (int k = 0; k < harfler.Length; k++)
+//    {
+//        if (selectedHarf == harfler[k])
+//        {
+
+//            Console.WriteLine("Girdiğiniz harf türkçe karakter {0}", selectedHarf);
+
+//        }
+//    }
+
+
+//} 
+
+// klavyeden girilen küçük harflerin büyük halini ekrana yazdıran kod örneği
+// 1. yöntem
+//char[] kucukHarf = new char[] {'a','b','c','d','e' };
+//char[] buyukHarf = new char[] { 'A', 'B', 'C', 'D', 'E' };
+
+
+//for (int i = 0; i < 100; i++)
+//{
+//	Console.WriteLine("harf giriniz");
+//    char harf = Convert.ToChar(Console.ReadLine());
+//	for (int k = 0; k < kucukHarf.Length; k++)
+//	{
+//		if (harf == kucukHarf[k]) {
+//			Console.WriteLine(buyukHarf[k]);
+//		}
+//	}
+
+//}
+//2. Yöntem
+
+for (int i = 0; i < 100; i++)
+{
+    Console.WriteLine("Harf giriniz");
+    int karakter = Convert.ToInt32(Convert.ToChar(Console.ReadLine()));
+
+    int newKarakter = karakter - 32;
+    char buyukHarf = Convert.ToChar(newKarakter);
+
+    Console.WriteLine(buyukHarf);
 
 
 
-
+}
